@@ -1,0 +1,11 @@
+{
+  "name": "ccp",
+  "version": "0.0.1",
+  "description": "Claude Code Plugin",
+  "repository": "https://github.com/liznear/ccp",
+  "homepage": "https://github.com/liznear/ccp",
+  "license": "MIT",
+  "keywords": [],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
+}

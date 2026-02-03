@@ -1,0 +1,20 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "ccp",
+  "description": "Claude Code Plugin",
+  "owner": {
+    "name": "Liz Near",
+    "email": "liizznear@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "ccp",
+      "description": "Claude Code Plugin",
+      "version": "0.0.1",
+      "source": "./",
+      "category": "productivity",
+      "homepage": "https://github.com/liznear/ccp",
+      "tags": []
+    }
+  ]
+}

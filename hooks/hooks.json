@@ -1,0 +1,28 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/context-sync.js\""
+          }
+        ],
+        "description": "Monitor session length and signal auto-sync"
+      }
+    ],
+    "SessionEnd": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node -e \"console.error('[AUTO-SYNC] Session ending. Please run session-manager skill to save final state.')\""
+          }
+        ],
+        "description": "Signal final sync on session end"
+      }
+    ]
+  }
+}
