@@ -9,7 +9,10 @@
       "Read(~/.claude/settings.json)",
       "Edit(*.claude/settings.json)",
       "Edit(*.claude/settings.local.json)",
-      "Edit(~/.claude/settings.json)"
+      "Edit(~/.claude/settings.json)",
+      "WebSearch",
+      "Bash(claude:*)",
+      "Bash(printf:*)"
     ]
   }
 }
