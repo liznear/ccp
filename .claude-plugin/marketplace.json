@@ -10,7 +10,7 @@
     {
       "name": "ccp",
       "description": "Claude Code Plugin",
-      "version": "0.0.1",
+      "version": "0.0.2",
       "source": "./",
       "category": "productivity",
       "homepage": "https://github.com/liznear/ccp",

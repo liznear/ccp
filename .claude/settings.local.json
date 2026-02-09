@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh api:*)",
+      "Bash(chmod:*)",
+      "Bash(node:*)",
+      "Read(*.claude/settings.json)",
+      "Read(*.claude/settings.local.json)",
+      "Read(~/.claude/settings.json)",
+      "Edit(*.claude/settings.json)",
+      "Edit(*.claude/settings.local.json)",
+      "Edit(~/.claude/settings.json)"
+    ]
+  }
+}
