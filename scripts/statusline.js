@@ -486,7 +486,7 @@ async function main() {
     process.exit(1);
   }
 
-  const transcriptPath = process.argv[2];
+  const transcriptPath = process.argv[2] || stdin.transcript_path;
   const transcriptData = await parseTranscript(transcriptPath);
 
   // Calculate fields

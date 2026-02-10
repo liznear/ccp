@@ -33,7 +33,7 @@ This command interactively configures the custom statusline script for Claude Co
 
 ## What it updates
 
-The command sets or updates the `statusLine` key in your chosen settings file to point to the plugin's custom statusline script. The `${CLAUDE_PLUGIN_ROOT}` environment variable ensures the path resolves correctly regardless of where the plugin is installed.
+The command sets or updates the `statusLine` key in your chosen settings file to point to the plugin's custom statusline script. It resolves the absolute path to the script to ensure it points to the currently installed version.
 
 ## Example
 
@@ -95,12 +95,13 @@ When this command is invoked, follow these steps:
    - Inform user: "✓ Backed up ${filename} to ${filename}.bak"
 
 6. **Update statusLine configuration**:
+   - Resolve the absolute path to the statusline script by expanding `${CLAUDE_PLUGIN_ROOT}/scripts/statusline.js`.
    - Create or update the `statusLine` key in the settings object:
      ```json
      {
        "statusLine": {
          "type": "command",
-         "command": "${CLAUDE_PLUGIN_ROOT}/scripts/statusline.js"
+         "command": "<resolved_absolute_path>"
        }
      }
      ```
@@ -124,7 +125,7 @@ When this command is invoked, follow these steps:
 ## Important Notes
 
 - Always preserve existing settings when merging - only update the `statusLine` key
-- Use `${CLAUDE_PLUGIN_ROOT}` environment variable in the command path to ensure portability
+- Resolve the absolute path to the statusline script to ensure it points to the correct version
 - Create backups before any modification to prevent accidental data loss
 - Abort with clear error message if JSON parsing fails
 - Ensure directory exists before writing settings file
