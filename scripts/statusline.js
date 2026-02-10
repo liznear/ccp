@@ -175,9 +175,6 @@ function calculateCost(
  * Format cost with appropriate precision
  */
 function formatCost(cost) {
-  if (cost < 0.01) {
-    return `$${(cost * 100).toFixed(4)}¢`;
-  }
   return `$${cost.toFixed(4)}`;
 }
 
@@ -521,7 +518,7 @@ async function main() {
   }
 
   // Context info
-  const contextSize = formatContextSize(stdin.context_window?.current_usage);
+  const contextSize = formatContextSize(getTotalTokens(stdin));
   const contextPercent = getContextPercent(stdin);
 
   // Current agent
