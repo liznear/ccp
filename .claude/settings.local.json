@@ -12,7 +12,11 @@
       "Edit(~/.claude/settings.json)",
       "WebSearch",
       "Bash(claude:*)",
-      "Bash(printf:*)"
+      "Bash(printf:*)",
+      "Bash(cp /home/nearsyh/.claude/scripts/show-changes.ts /home/nearsyh/Developer/ccp/scripts/show-changes.ts)",
+      "Bash(cp /home/nearsyh/.claude/scripts/web-review.ts /home/nearsyh/Developer/ccp/scripts/web-review.ts)",
+      "Bash(bun --version)",
+      "Bash(bun build *)"
     ]
   }
 }

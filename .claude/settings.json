@@ -1,0 +1,13 @@
+{
+  "extraKnownMarketplaces": {
+    "ccp": {
+      "source": {
+        "source": "directory",
+        "path": "/home/nearsyh/Developer/ccp"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "ccp@ccp": true
+  }
+}
